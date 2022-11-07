@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+    --ff-primary: 'Poppins', sans-serif;
+    --txt-color: #E1E1E6;
+    --hue: 194;
+    --primary-color: rgba(9, 45, 56, 1)
+}
+body{
+   font-size:  1.6rem;
+   color: var(--txt-color);
+   background-color: black;
+}
+body *{
+    font-family: var(--ff-primary);
+}
+
+#app{
+    max-width: 112rem;
+    margin:0 auto;
+    padding:2rem;
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:2.5rem 0;
+}
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border-width: 0;
+}
+header h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.search{
+    display: flex;
+    align-items: center;
+    gap:.8rem;
+}
+.search input{
+    height: 3.2rem;
+    width: 46.2rem;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+    padding: 1.6rem;
+    background-color: #06181C;
+    
+
+}
+#input-search {
+color:#7C7C8A
+}
+.search button{
+ background-color: rgba(6, 94, 124, 1);
+ border-radius: .5rem;
+ 
+ width: 17rem;
+ border: none;
+ padding: 1.2rem, 3.2rem, 1.2rem, 3.2rem;
+ cursor: pointer;
+ font-size: 24px;
+ color:#ffff;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ gap:.8rem
+}
+#buttontext{
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    margin-top: .1rem;
+}
+.search button:hover{
+    filter: brightness(1.1);
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 1rem 2rem -1rem rgba(0,0,0,0.3);
+    border:1 px solid white;
+}
+table *{
+    font-size: 1.4rem;
+    color: var(--txt-color)
+}
+td.user img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+table th{
+    background-color: var(--primary-color);
+    text-align: left;
+    font-weight: normal;
+    padding: 1.5rem;
+}
+table th:first-child{
+    border-top-left-radius: 1rem ;
+}
+table th:last-child{
+    border-top-right-radius: 1rem ;
+}
+.vazio{
+    background-color: #2F2F33;
+    height: 62rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:6rem
+    
+}
+.vazio p{
+    font-size: 4rem;
+    color:rgba(78, 84, 85, 1);
+    line-height: 2.5rem;
+}
+.hiden{
+    display: none;
+}
+   
+   
+table td{
+    padding: 1.5rem;
+    text-align: left;
+}
+table tr{
+    background-color: rgba(74, 128, 140, 1)
+}
+table tr:nth-child(odd){
+    background-color: rgba(6, 22, 27, 0.5)
+}
+td.user{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+}
+td.user a{
+    text-decoration: none;
+}
+td.user a p{
+    font-weight: bold;
+}
+td .remove{
+    background: transparent;
+    border: none;
+    color: #F75A68
+}
